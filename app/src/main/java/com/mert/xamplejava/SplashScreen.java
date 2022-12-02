@@ -15,12 +15,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY);
-        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES){
-            setContentView(R.layout.splash_screen_dark);
-        }else if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_NO){
-            setContentView(R.layout.splash_screen_light);
-        }
+        setContentView(R.layout.splash_screen_dark);
 
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
