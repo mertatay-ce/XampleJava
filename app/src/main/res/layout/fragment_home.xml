@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.HomeFragment"
+    android:background="@android:color/transparent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:text="@string/what_came_to_mind_today_write_search"
+        android:fontFamily="@font/urbanist_regular"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:gravity="left"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="-34dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_search_txtfield">
+
+        <EditText
+            android:layout_width="270dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="43dp"
+            android:background="@android:color/transparent"
+            android:hint="@string/search"
+            android:textColorHint="@color/white"
+            android:fontFamily="@font/urbanist_regular"/>
+
+        <LinearLayout
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="43dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_search_btn_form">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/search"
+                android:src="@drawable/btn_search_icon"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="124dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAlignment="viewStart"
+            android:text="@string/example"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_regular"/>
+
+        <TextView
+            android:paddingTop="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="95dp"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:gravity="start"
+            android:text="@string/verb_temp"
+            android:textSize="12sp"
+            android:textColor="@color/word_feature_color"
+            android:fontFamily="@font/urbanist_regular"/>
+        <TextView
+            android:layout_marginStart="195dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/ɪɡˈzɑːmpl/"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_italic"/>
+        <TextView
+            android:layout_marginStart="296dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/ɪɡˈzæmpl/"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_italic"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/definitions_layout"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/bg_definitons"
+        android:orientation="vertical">
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/recycler_view_definitons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/synonyms_and_similiars_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="24dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/synonyms"
+            android:background="@drawable/bg_definitons"
+            android:layout_width="177dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Example Synonyms"
+                android:textColor="@color/white"
+                android:textAlignment="textStart"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/urbanist_regular"
+                android:textSize="18sp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/similiars"
+            android:background="@drawable/bg_definitons"
+            android:layout_marginStart="10dp"
+            android:layout_width="177dp"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Similiar Words"
+                android:textColor="@color/white"
+                android:textAlignment="textEnd"
+                android:fontFamily="@font/urbanist_regular"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subtitle_layout"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="615dp"
+        android:background="@drawable/bg_definitons"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Example in Subtitle"
+            android:textColor="@color/white"
+            android:textAlignment="textStart"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/urbanist_regular"
+            android:textSize="18sp"/>
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@raw/example"/>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>
