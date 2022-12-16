@@ -4,4 +4,6 @@
     <string name="menu">Menu</string>
     <string name="search">Search.</string>
     <string name="what_came_to_mind_today_write_search">What came to mind today? Write. Search.</string>
+    <string name="example">Example</string>
+    <string name="verb_temp">verb</string>
 </resources>

@@ -50,8 +50,51 @@
                 />
         </LinearLayout>
 
-
-
     </LinearLayout>
+    <FrameLayout
+        android:layout_marginTop="124dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textAlignment="viewStart"
+            android:text="@string/example"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_regular"/>
+
+        <TextView
+            android:paddingTop="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="95dp"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:gravity="start"
+            android:text="@string/verb_temp"
+            android:textSize="12sp"
+            android:textColor="@color/word_feature_color"
+            android:fontFamily="@font/urbanist_regular"/>
+        <TextView
+            android:layout_marginStart="195dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/ɪɡˈzɑːmpl/"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_italic"/>
+        <TextView
+            android:layout_marginStart="296dp"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="/ɪɡˈzæmpl/"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/urbanist_italic"/>
+    </FrameLayout>
 
 </FrameLayout>

@@ -21,4 +21,6 @@
     <color name="LightGreen">#7EE081</color>
     <color name="TeaGreen">#C3F3C0</color>
     <color name="buttonLabel">#FFFFFF</color>
+
+    <color name="word_feature_color">#5EFDF3</color>
 </resources>

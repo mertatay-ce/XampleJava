@@ -15,14 +15,13 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.mert.xamplejava.R;
 import com.mert.xamplejava.databinding.ActivityHome2Binding;
-import com.mert.xamplejava.databinding.ActivityHomeBinding;
+
 
 public class HomeActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final ActivityHome2Binding binding = ActivityHome2Binding.inflate(getLayoutInflater());
+        ActivityHome2Binding binding = ActivityHome2Binding.inflate(getLayoutInflater());
 
 
         setContentView(binding.getRoot());
