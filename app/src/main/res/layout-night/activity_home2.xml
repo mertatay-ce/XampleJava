@@ -10,56 +10,45 @@
     android:theme="@style/Xample.HomeActivityTheme_Dark"
     app:statusBarBackground="#00000000"
     android:background="@drawable/bg_splash_screen_darkmode">
-    <com.google.android.material.appbar.AppBarLayout
+    <LinearLayout
+        android:id="@+id/linear1"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="@drawable/bg_appbarlayout_mainfragment"
-        app:elevation="0dp"
-        android:translationZ="0.1dp"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
         >
-        <com.google.android.material.appbar.CollapsingToolbarLayout
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="@string/xample"
+            android:gravity="start"
+            android:fontFamily="@font/coolvetica_rg"
+            android:textColor="@color/white"
+            android:textSize="36sp"/>
 
-            android:id="@+id/collapse_layout"
-            android:fitsSystemWindows="true"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@drawable/bg_appbarlayout_mainfragment"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:toolbarId="@id/topAppBar">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_menu"
+            android:contentDescription="@string/menu"
+            android:minHeight="48dp"
+            >
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/topAppBar"
-                android:fitsSystemWindows="true"
-                android:layout_gravity="top"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@drawable/topappbar_bg"
-                app:menu="@menu/top_menu"
-                app:layout_collapseMode="pin">
-                <TextView
-                    android:layout_marginTop="16dp"
-                    android:layout_marginStart="24dp"
-                    android:layout_width="130dp"
-                    android:layout_height="match_parent"
-                    android:text="@string/xample"
-                    android:textAlignment="textStart"
-                    android:fontFamily="@font/coolvetica_rg"
-                    android:textColor="@color/white"
-                    android:textSize="36sp"/>
-
-
-            </com.google.android.material.appbar.MaterialToolbar>
-        </com.google.android.material.appbar.CollapsingToolbarLayout>
-    </com.google.android.material.appbar.AppBarLayout>
+        </ImageButton>
+    </LinearLayout>
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_home_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="70dp"
+        android:paddingTop="5dp"
         android:contentDescription="@string/app_name">
 
-        <LinearLayout
+        <FrameLayout
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -75,6 +64,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_marginStart="-17dp"
         android:background="@drawable/bg_bottom_nav_form"
         android:backgroundTint="@android:color/transparent"
         app:hideOnScroll="true"
@@ -84,7 +74,6 @@
             android:id="@+id/bottomNavView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
             android:background="@drawable/bg_bottom_nav_view"
             android:theme="@style/BottomNavigationView"
             app:itemIconTint="@color/bottom_menu_bg"

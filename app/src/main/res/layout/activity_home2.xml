@@ -42,7 +42,7 @@
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nested_home_scroll"
         android:layout_width="match_parent"
-        android:paddingTop="?attr/actionBarSize"
+        android:paddingTop="5dp"
         android:layout_height="match_parent"
         android:layout_marginTop="70dp"
         android:contentDescription="@string/app_name">
@@ -63,6 +63,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:layout_marginStart="-17dp"
         android:background="@drawable/bg_bottom_nav_form"
         android:backgroundTint="@android:color/transparent"
         app:hideOnScroll="true"
@@ -72,7 +73,6 @@
             android:id="@+id/bottomNavView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
             android:background="@drawable/bg_bottom_nav_view"
             android:theme="@style/BottomNavigationView"
             app:itemIconTint="@color/bottom_menu_bg"
