@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context=".view.HomeActivity"
+    android:id="@+id/coordinator_layout"
+    android:theme="@style/Xample.HomeActivityTheme_Dark"
+    app:statusBarBackground="#00000000"
+    android:background="@drawable/bg_splash_screen_darkmode">
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="@string/xample"
+            android:gravity="start"
+            android:fontFamily="@font/coolvetica_rg"
+            android:textColor="@color/white"
+            android:textSize="36sp"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/ic_menu"
+            android:contentDescription="@string/menu"
+            android:minHeight="48dp"
+            >
+
+        </ImageButton>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_home_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingTop="5dp"
+        android:contentDescription="@string/app_name">
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@android:color/transparent"
+            android:orientation="vertical" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="-17dp"
+        android:background="@drawable/bg_bottom_nav_form"
+        android:backgroundTint="@android:color/transparent"
+        app:hideOnScroll="true"
+        app:elevation="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bottom_nav_view"
+            android:theme="@style/BottomNavigationView"
+            app:itemIconTint="@color/bottom_menu_bg"
+            app:itemTextColor="@color/bottom_menu_bg"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

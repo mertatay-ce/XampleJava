@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/listed"
+        android:icon="@drawable/ic_home_icon"
+        android:title="Home"
+        android:iconTint="@color/white"
+        android:contentDescription="Home"
+        app:showAsAction="never"
+        tools:targetApi="o" />
+    <item app:showAsAction="never"
+        android:id="@+id/more"
+        android:title="More"
+        android:iconTint="@color/white"
+        android:contentDescription="More"
+        />
+</menu>

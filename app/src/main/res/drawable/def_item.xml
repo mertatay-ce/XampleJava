@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:type="linear"
+        android:startX="63.83"
+        android:startY="40"
+        android:endX="117.56"
+        android:endY="183.82">
+        <item
+            android:color="#4D000000"
+            android:offset="0"/>
+        <item
+            android:color="#5E9080F0"
+            android:offset="0.5"/>
+        <item
+            android:color="#528272E4"
+            android:offset="0.56"/>
+        <item
+            android:color="#0021108D"
+            android:offset="1"/>
+    </gradient>
+</shape>

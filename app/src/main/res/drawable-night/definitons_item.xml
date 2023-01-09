@@ -1,0 +1,13 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="363dp"
+    android:height="225dp"
+    android:viewportWidth="363"
+    android:viewportHeight="225">
+
+  <path
+      android:pathData="M0,32C0,14.33 14.33,0 32,0H331C348.67,0 363,14.33 363,32V193C363,210.67 348.67,225 331,225H32C14.33,225 0,210.67 0,193V32Z"
+      android:strokeAlpha="0.6"
+      android:fillColor="@color/RussianViolet"
+      android:strokeColor="@color/cardview_shadow_start_color"
+      android:fillAlpha="0.3"/>
+</vector>

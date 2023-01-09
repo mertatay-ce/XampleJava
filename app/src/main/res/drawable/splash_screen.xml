@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@drawable/bg_splash_screen_lightmode"/>
+    <item>
+        <bitmap
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:mipMap="true"
+            android:src="@mipmap/ic_launcher" />
+    </item>
+</layer-list>

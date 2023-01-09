@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="definiton"
+            type="com.mert.xamplejava.model.data.DefinitionModel"/>
+    </data>
+
+<androidx.cardview.widget.CardView
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="96dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardCornerRadius="20dp"
+    card_view:contentPadding="5dp"
+    card_view:cardElevation="0dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="@color/word_feature_color"
+                android:id="@+id/def_id"
+                android:layout_width="24dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/urbanist_regular"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:text="@{definiton.id, default=`*`}" />
+
+            <TextView
+                android:id="@+id/definition"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/urbanist_regular"
+                android:gravity="start|center_vertical"
+                android:text="@{definiton.definition, default=`Kategori`}" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/def_example"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/urbanist_italic"
+                android:gravity="start"
+                android:text="@{definiton.definition, default=`@string/example`}" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</layout>
